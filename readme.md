@@ -10,7 +10,30 @@
 - Bob
 - Carta
 - sqlc
+- SQLBoiler
 - my own codeg
+
+## Features
+
+| short | function                                              |
+| ----- | ----------------------------------------------------- |
+| C     | Create                                                |
+| R     | Read one                                              |
+| U     | Update one                                            |
+| D     | Delete one                                            |
+| P     | Partial update                                        |
+| L     | List many                                             |
+| A     | Audit or some kind of hookable api to implement audit |
+| H     | Hooks for audit or timestamps                         |
+| M     | Multi create                                          |
+
+| Project | CRUDPLAHM        |
+| ------- | ---------------- |
+| codegen | C-UDPLA-         |
+| Gorm    | CRUD-L-H         |
+| Go-Jet  | -R---L--         |
+| SQ      | almost plain sql |
+| Bob     |                  |
 
 ## questions
 
@@ -27,6 +50,6 @@
 
 ## decision table
 
-| feature       | gorm | go-jet | bob | carta | sqlc                                                                       |
-| ------------- | ---- | ------ | --- | ----- | -------------------------------------------------------------------------- |
-| multi tenancy | -    | -      | -   | -     | workaround [discussion](https://github.com/sqlc-dev/sqlc/discussions/1108) |
+| feature       | gorm                                                      | go-jet | bob | carta | sqlc                                                                       |
+| ------------- | --------------------------------------------------------- | ------ | --- | ----- | -------------------------------------------------------------------------- |
+| multi tenancy | not easy. https://github.com/bartventer/gorm-multitenancy | -      | -   | -     | workaround [discussion](https://github.com/sqlc-dev/sqlc/discussions/1108) |

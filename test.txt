@@ -1,0 +1,37 @@
+Create
+- build stmt
+- insert elem
+- check err
+- query elem
+- check result
+
+Read
+- Load dump?
+- Query List
+- Check result
+
+- Load dump?
+- Query Single Row
+- Check Result
+
+Update
+- Insert Elem, returning ID
+- Set new value
+- update elem
+- query elem
+- check elem
+
+Delete
+- Insert Elem
+- Check elem
+- Delete Elem
+- Query Elem 
+- Check result
+
+PartialUpdate
+- query single Row
+- copy PK and set single attribute
+- check SQL only sets 1 attribute
+- query elem
+- check result
+
